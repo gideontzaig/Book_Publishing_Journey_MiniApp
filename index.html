@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Publishing Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">×</button>
+            
+            <div class="modal-header">
+                <h1 class="modal-title">Let's tailor your book publishing journey</h1>
+                <p class="modal-subtitle" id="step-subtitle">How would you describe yourself?</p>
+            </div>
+
+            <div class="modal-content">
+                <!-- Step 1: User Type -->
+                <div class="step step-1 active" data-step="1">
+                    <div class="cards-container cards-vertical">
+                        <div class="card user-type-card" data-value="indie-author">
+                            <div class="card-icon indie-author-icon"></div>
+                            <div class="card-content">
+                                <h3 class="card-title">Indie author</h3>
+                                <p class="card-description">You want to reach new readers and grow your audience.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card user-type-card" data-value="thought-leader">
+                            <div class="card-icon thought-leader-icon"></div>
+                            <div class="card-content">
+                                <h3 class="card-title">Thought leader</h3>
+                                <p class="card-description">You want to share your expertise, and grow your brand or business.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card user-type-card" data-value="casual-writer">
+                            <div class="card-icon casual-writer-icon"></div>
+                            <div class="card-content">
+                                <h3 class="card-title">Casual writer</h3>
+                                <p class="card-description">You're writing to pursue your passion, or for fun.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Genre -->
+                <div class="step step-2" data-step="2">
+                    <div class="cards-container cards-grid">
+                        <div class="card genre-card" data-value="fiction">
+                            <div class="card-icon fiction-icon"></div>
+                            <h3 class="card-title">Fiction</h3>
+                        </div>
+                        
+                        <div class="card genre-card" data-value="non-fiction">
+                            <div class="card-icon non-fiction-icon"></div>
+                            <h3 class="card-title">Non-fiction</h3>
+                        </div>
+                        
+                        <div class="card genre-card" data-value="autobiography">
+                            <div class="card-icon autobiography-icon"></div>
+                            <h3 class="card-title">Autobiography/Memoir</h3>
+                        </div>
+                        
+                        <div class="card genre-card" data-value="educational">
+                            <div class="card-icon educational-icon"></div>
+                            <h3 class="card-title">Educational/Academic</h3>
+                        </div>
+                        
+                        <div class="card genre-card" data-value="childrens">
+                            <div class="card-icon childrens-icon"></div>
+                            <h3 class="card-title">Children's/Illustrated</h3>
+                        </div>
+                        
+                        <div class="card genre-card" data-value="business">
+                            <div class="card-icon business-icon"></div>
+                            <h3 class="card-title">Business</h3>
+                        </div>
+                        
+                        <div class="card genre-card" data-value="lifestyle">
+                            <div class="card-icon lifestyle-icon"></div>
+                            <h3 class="card-title">Lifestyle</h3>
+                        </div>
+                        
+                        <div class="card genre-card" data-value="other">
+                            <div class="card-icon other-icon"></div>
+                            <h3 class="card-title">Other</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Publishing Process -->
+                <div class="step step-3" data-step="3">
+                    <div class="cards-container cards-grid process-cards">
+                        <div class="card process-card" data-value="just-idea">
+                            <div class="card-icon idea-icon"></div>
+                            <h3 class="card-title">Just an idea</h3>
+                        </div>
+                        
+                        <div class="card process-card" data-value="need-design">
+                            <div class="card-icon design-icon"></div>
+                            <h3 class="card-title">Need design or<br>illustrations</h3>
+                        </div>
+                        
+                        <div class="card process-card" data-value="writing-progress">
+                            <div class="card-icon writing-icon"></div>
+                            <h3 class="card-title">Writing in progress</h3>
+                        </div>
+                        
+                        <div class="card process-card" data-value="need-promotion">
+                            <div class="card-icon promotion-icon"></div>
+                            <h3 class="card-title">Already published, need promotion</h3>
+                        </div>
+                        
+                        <div class="card process-card" data-value="manuscript-ready">
+                            <div class="card-icon manuscript-icon"></div>
+                            <h3 class="card-title">Manuscript ready</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Budget -->
+                <div class="step step-4" data-step="4">
+                    <div class="budget-container">
+                        <div class="budget-option" data-value="under-1000">
+                            <input type="radio" name="budget" id="budget-1" value="under-1000">
+                            <label for="budget-1">Under $1,000</label>
+                        </div>
+                        
+                        <div class="budget-option" data-value="1000-2000">
+                            <input type="radio" name="budget" id="budget-2" value="1000-2000">
+                            <label for="budget-2">$1,000–$2,000</label>
+                        </div>
+                        
+                        <div class="budget-option" data-value="2001-3000">
+                            <input type="radio" name="budget" id="budget-3" value="2001-3000">
+                            <label for="budget-3">$2,001–$3,000</label>
+                        </div>
+                        
+                        <div class="budget-option" data-value="3001-4000">
+                            <input type="radio" name="budget" id="budget-4" value="3001-4000">
+                            <label for="budget-4">$3,001–$4,000</label>
+                        </div>
+                        
+                        <div class="budget-option" data-value="4001-5000">
+                            <input type="radio" name="budget" id="budget-5" value="4001-5000">
+                            <label for="budget-5">$4,001–$5,000</label>
+                        </div>
+                        
+                        <div class="budget-option" data-value="over-5000">
+                            <input type="radio" name="budget" id="budget-6" value="over-5000">
+                            <label for="budget-6">Over $5,000</label>
+                        </div>
+                    </div>
+                    
+                    <p class="budget-note">You'll finalize payment details together with the freelancer later.</p>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="navigation-container">
+                    <button class="btn btn-back" id="back-btn" style="display: none;">← Back</button>
+                    <div class="step-indicator" id="step-indicator">STEP 1 OF 4</div>
+                    <button class="btn btn-next" id="next-btn" disabled>Next →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
